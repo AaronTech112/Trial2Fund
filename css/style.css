@@ -309,6 +309,14 @@ section {
     transition: var(--transition-fast);
 }
 
+.mobile-get-started {
+    display: none;
+}
+
+.desktop-get-started {
+    display: block;
+}
+
 .login-btn:hover {
     background: var(--primary-color);
     color: var(--text-dark);
@@ -1055,19 +1063,18 @@ section {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 40px;
     margin: 20px 0;
 }
 
 .platform-logos img {
-    height: 50px;
-    filter: brightness(0.9);
+    height: 70px;
     transition: var(--transition-fast);
 }
 
 .platform-logos img:hover {
-    filter: brightness(1);
     transform: scale(1.1);
+    filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.5));
 }
 
 .platform-image {
@@ -1094,13 +1101,12 @@ section {
 
 .payment-logos img {
     height: 40px;
-    filter: grayscale(100%) brightness(0.8);
     transition: var(--transition-fast);
 }
 
 .payment-logos img:hover {
-    filter: grayscale(0%) brightness(1);
     transform: scale(1.1);
+    filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.5));
 }
 
 /* FAQ Section */
@@ -1387,7 +1393,7 @@ footer {
     }
 
     .hero-image {
-        width: 70%;
+        width: 90%;
     }
 
     .hero-buttons, .trustpilot {
@@ -1413,6 +1419,7 @@ footer {
         padding-top: 40px;
         transition: var(--transition-normal);
         z-index: 999;
+        gap: 20px;
     }
 
     .nav-links.active {
@@ -1421,6 +1428,17 @@ footer {
 
     .mobile-menu-btn {
         display: block;
+    }
+    
+    .mobile-get-started {
+        display: block;
+        margin-top: 20px;
+        padding: 10px 30px;
+        font-size: 1.1rem;
+    }
+    
+    .desktop-get-started {
+        display: none;
     }
 
     .hero h1 {
@@ -1446,7 +1464,7 @@ footer {
     }
 
     .hero-image {
-        width: 90%;
+        width: 100%;
     }
 
     .hero-buttons {
