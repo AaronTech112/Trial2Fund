@@ -1287,6 +1287,22 @@ footer {
     transform: translateY(-5px);
 }
 
+.email-contact {
+    margin-top: 15px;
+}
+
+.email-contact a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-muted);
+    transition: var(--transition-fast);
+}
+
+.email-contact a:hover {
+    color: var(--primary-color);
+}
+
 .footer-bottom {
     text-align: center;
     padding-top: 20px;
