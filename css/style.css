@@ -553,6 +553,114 @@ section {
 }
 
 /* Detailed Benefits Section */
+.detailed-benefits {
+    padding: 80px 0;
+    background: var(--background-dark);
+}
+
+.benefit-block {
+    max-width: 800px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.benefit-list {
+    list-style: none;
+    padding: 0;
+    margin: 30px auto;
+    display: inline-block;
+    text-align: left;
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    border: var(--card-border);
+    width: 100%;
+    box-shadow: var(--card-shadow);
+}
+
+.benefit-list li {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--text-light);
+}
+
+.benefit-list li i {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.benefit-note {
+    background: rgba(255, 215, 0, 0.05);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    margin-top: 30px;
+    display: inline-block;
+    width: 100%;
+}
+
+.benefit-note p {
+    margin: 5px 0;
+    color: var(--text-muted);
+}
+
+.benefit-note strong {
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.section-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    margin: 60px 0;
+    width: 100%;
+}
+
+.text-content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.text-content p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-muted);
+}
+
+.highlight-text {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .benefit-list {
+        padding: 25px;
+    }
+    
+    .benefit-list li {
+        font-size: 1rem;
+    }
+    
+    .benefit-note {
+        padding: 15px;
+    }
+    
+    .highlight-text {
+        font-size: 1.1rem;
+    }
+}
+
+/* Key Highlights Section */
 .key-highlights {
     background: var(--background-dark);
     position: relative;
