@@ -1410,6 +1410,24 @@ section {
     box-shadow: 0 5px 15px rgba(0, 136, 204, 0.4);
 }
 
+.email-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 25px;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: var(--border-radius);
+    transition: var(--transition-fast);
+    font-weight: 600;
+}
+
+.email-btn:hover {
+    background: var(--primary-light);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+}
+
 /* Footer */
 footer {
     background: var(--background-darker);
